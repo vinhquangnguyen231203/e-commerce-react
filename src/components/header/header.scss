@@ -1,0 +1,176 @@
+/* header.scss */
+.custom-navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  white-space: nowrap;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  .custom-toggler {
+    display: none;
+  }
+
+  .custom-nav-logo {
+    margin-left: 30px;
+  }
+
+  .custom-nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+
+    li {
+      margin: auto 16px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      position: relative;
+      transition: color 0.3s ease;
+
+      &.active {
+        color: blue;
+        font-weight: bold; /* Optional: to make it stand out */
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: blue;
+        bottom: -2px;
+        left: 0;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    a:hover {
+      color: #007bff; /* Màu khi hover */
+    }
+  }
+
+  .dropdown-menu {
+    display: none; /* Ẩn menu mặc định */
+    position: absolute;
+    top: 100%; /* Đặt menu ngay dưới nav item */
+    left: 0; /* Căn trái của menu với nav item */
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 200px;
+    width: max-content; /* Đảm bảo menu không bị co lại */
+
+    a {
+      display: block;
+      padding: 10px 20px;
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #f8f9fa;
+        color: #007bff;
+      }
+    }
+  }
+
+  .nav-item {
+    position: relative; /* Để dropdown-menu căn chỉnh đúng vị trí */
+    &:hover .dropdown-menu {
+      display: block; /* Hiển thị menu khi hover */
+    }
+  }
+
+  .custom-nav-text {
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+
+    .custom-icon {
+      font-size: 24px; /* Adjust size */
+      color: #ff0000; /* Adjust color */
+      margin-right: 8px; /* Space between icon and text */
+    }
+  }
+
+  @media (max-width: 991.98px) { // md breakpoint
+    .custom-toggler {
+      display: block;
+    }
+
+    .custom-nav-logo {
+      margin-left: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+
+    .custom-nav-text {
+      position: absolute;
+      right: 30px;
+      top: 0;
+    }
+
+    .navbar-collapse {
+      position: absolute;
+      top: 56px; /* Adjust according to the height of the navbar */
+      left: 0;
+      right: 0;
+      background-color: white; /* Ensure it has a background */
+    }
+  }
+}
+
+.nav-custom-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .custom-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+button.custom-toggler.navbar-toggler {
+  border: none;
+}
+
+.ant-modal {
+  top: -300px !important;
+}
+
+.ant-modal-content {
+  margin: 0 auto;
+}
+
+.custom-button-content {
+  position: relative;
+}
+
+.custom-number {
+  position: absolute;
+  right: -5px;
+  top: -10px;
+}
+
+.custom-icon {
+  font-size: 24px; /* Kích thước của biểu tượng */
+}

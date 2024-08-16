@@ -1,0 +1,27 @@
+@import '../../variable.scss';
+
+#advertisement{
+    margin-top: 100px;
+}
+#carousel{
+   
+}
+#trusted {
+    background-color: #f8f9fa;
+    padding: 20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#signup{
+    background-color: #f8f9fa;
+}
+#countup{
+    padding: 40px;
+}
+#categories{
+    padding: 40px 20px;
+    background-color: $bg;
+}

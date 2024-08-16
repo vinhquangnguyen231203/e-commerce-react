@@ -1,0 +1,41 @@
+.contact-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+  
+    .contact-form-wrapper {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .contact-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 24px;
+      text-align: center;
+  
+      .contact-icon {
+        margin-right: 8px;
+      }
+    }
+  
+    .ant-form-item {
+      margin-bottom: 16px;
+    }
+  
+    .ant-input,
+    .ant-btn {
+      height: 48px;
+      border-radius: 4px;
+    }
+  
+    .ant-btn {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  

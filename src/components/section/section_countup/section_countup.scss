@@ -1,0 +1,55 @@
+#countup {
+    position: relative;
+    /* Background cover */
+    background-image: url(../../../assets/background/bg-overlay.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0; /* Background nằm dưới cùng */
+    margin-top: 0;
+    color: white;
+    overflow: hidden; /* Đảm bảo lớp phủ không vượt ra ngoài section */
+  }
+  
+  #countup .bg-overlay {
+    background: rgba(42, 42, 45, 0.88);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* bg-overlay nằm trên background */
+  }
+  
+  #countup .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #countup .box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  #countup .box-icon {
+    font-size: 50px;
+  }
+  
+  #countup .box-content {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  #countup .box-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  .stone{
+    font-size: 1.0rem;
+  }
+  

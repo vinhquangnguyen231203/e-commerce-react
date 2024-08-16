@@ -1,0 +1,81 @@
+.detail-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .detail-content-price {
+    width: 100%;
+    height: 80px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: start;
+    padding: 20px 5px;
+    align-items: center;
+  }
+  
+  .detail-price-original {
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-size: 1rem;
+  }
+  
+  .detail-price-sale {
+    color: blue;
+  }
+  
+  .detail-price-percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    width: 50px;
+    height: 30px;
+    background-color: blue;
+  }
+  
+  .details-content-handle {
+    display: flex;
+    justify-content: start;
+    padding: 20px 5px;
+  
+    .btn-add-to-cart {
+      margin-right: 10px;
+    }
+  
+    .btn-add-to-favorite {
+      margin-left: 10px;
+    }
+  
+    @media (max-width: 576px) {
+      flex-direction: column;
+  
+      .btn-add-to-cart,
+      .btn-add-to-favorite {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+      }
+    }
+  }
+.details-count{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    padding: 5px;
+
+    width: 170px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    .title-total{
+        transform: translateY(3px);
+    }
+    
+}

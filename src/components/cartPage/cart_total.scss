@@ -1,0 +1,55 @@
+.cart-total-shipping {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép phần tử con xuống dòng khi cần */
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 10px; /* Khoảng cách dưới giữa các mục */
+
+  p {
+    margin: 0;
+    transform: translateY(-3px);
+  }
+}
+
+.cart-total-all {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép phần tử con xuống dòng khi cần */
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px; /* Khoảng cách dưới giữa các mục */
+}
+
+.cart-price-sale {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép phần tử con xuống dòng khi cần */
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px; /* Khoảng cách dưới giữa các mục */
+}
+
+.cart-total {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 20px;
+  /* Đảm bảo các phần tử con không tràn viền */
+  overflow: hidden;
+}
+
+/* Responsive: Khi màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .cart-price-sale,
+  .cart-total-shipping,
+  .cart-total-all {
+    flex-direction: column; /* Đặt các phần tử con theo chiều dọc */
+    align-items: flex-start; /* Canh lề trái cho các phần tử con */
+  }
+
+  .cart-price-sale p,
+  .cart-total-shipping p,
+  .cart-total-all p {
+    margin-bottom: 5px; /* Khoảng cách dưới giữa các mục */
+  }
+}

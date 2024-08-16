@@ -1,0 +1,48 @@
+@import '../../../variable.scss';
+
+#categories .box {
+  box-sizing: border-box;
+  width: 100%; /* Đảm bảo box chiếm toàn bộ chiều rộng của cột */
+  max-width: 300px; /* Chiều rộng tối đa của box */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0 auto; /* Căn giữa box trong cột */
+  transition: transform 1s; 
+
+  &:hover{
+    border: 4px solid blue;
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
+}
+
+#categories .box-image {
+  overflow: hidden;
+  padding: 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+  .image {
+    transition: transform 1.3s; 
+    display: block; 
+    width: 100%;
+    height: auto;
+    
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2); 
+    }
+  }
+}
+
+#categories .container {
+  text-align: center;
+}
+
+#categories .box-image-contain{
+  overflow: hidden
+}
+#categories p{
+  transform: translateY(-10px);
+}

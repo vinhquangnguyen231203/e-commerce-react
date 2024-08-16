@@ -1,0 +1,23 @@
+#cartpage{
+  margin-top: 100px;
+  .box-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      margin-right: 8px; 
+    }
+  
+    h4 {
+      margin: 0;
+    }
+  }
+  .footer-cart{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .footer-cart-total{
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.galaxy-slider {
+    .slick-slide {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; // Điều chỉnh khoảng cách giữa các logo
+    }
+  
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+  
+    .slick-slide img {
+      width: 100px; // Điều chỉnh kích thước của logo
+      height: auto;
+      object-fit: contain; // Đảm bảo logo không bị méo
+    }
+  
+    .slick-prev, .slick-next {
+      z-index: 1;
+    }
+  
+    .slick-prev {
+      left: 10px;
+    }
+  
+    .slick-next {
+      right: 10px;
+    }
+  }
+  

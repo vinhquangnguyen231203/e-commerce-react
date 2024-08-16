@@ -1,0 +1,12 @@
+.footer-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-cart-total {
+        white-space: nowrap;
+      }
+}
+.cart-items{
+    height: 35vh;
+    overflow-y: auto;
+}
