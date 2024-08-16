@@ -36,6 +36,7 @@ root.render(
         theme="colored"
         transition= {Flip}
       />
+      
       <SpeedInsights />
     </Provider>
   </React.StrictMode>
